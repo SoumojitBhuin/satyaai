@@ -13,12 +13,12 @@
 <body>
     <header>
         <div class="header-container">
-            <a href="/" class="logo">Satya</a>
-            <a href="https://chrome.google.com/webstore" class="cta-button" target="_blank">
-                <i class="fab fa-chrome"></i>
-                Download Extension
-            </a>
-        </div>
+        <a href="/" class="logo">Satya</a>
+
+        <a href="{{ url_for('static', filename='satya-extension.zip') }}" class="cta-button" id="download-extension-btn">
+                <i class="fab fa-chrome"></i> Download
+        </a>
+    </div>
     </header>
 
     <main>
@@ -115,10 +115,10 @@
                 Designed & Developed by <a href="https://kodovers.vercel.app/" target="_blank">KODOVERS</a>
             </div>
             <div class="social-links">
-                <a href="#" class="social-link" target="_blank" title="GitHub">
+                <a href="https://github.com/KODOVERS" class="social-link" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="social-link" target="_blank" title="LinkedIn">
+                <a href="https://linkedin.com/company/wearekodovers" class="social-link" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="#" class="social-link" target="_blank" title="Twitter">
@@ -127,6 +127,7 @@
             </div>
         </div>
     </footer>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
     
